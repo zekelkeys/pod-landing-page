@@ -31,3 +31,20 @@ body {
     font-weight: 300;
     background-color: var(--blue-950);
 }
+
+h1 {
+    color: var(--green);
+    font-size: 32px;
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
+span {
+    color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+}

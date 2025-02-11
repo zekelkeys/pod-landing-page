@@ -25,3 +25,7 @@
     --blue-600: #5A668A;
     --blue-300: #C2CBE5;
 }
+
+body {
+    background-color: var(--blue-950);
+}

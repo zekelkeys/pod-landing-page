@@ -6,6 +6,7 @@
     font-weight: 300;
     src: url('../fonts/chivo-v18-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* chivo-700 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -13,4 +14,14 @@
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/chivo-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --red:      #FB3E3E;
+    --green:    #54E6AF;
+    --white:    #FFFFFF;
+    --blue-950: #121725;
+    --blue-900: #2C344B;
+    --blue-600: #5A668A;
+    --blue-300: #C2CBE5;
 }

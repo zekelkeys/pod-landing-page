@@ -37,6 +37,7 @@ h1 {
     font-size: 32px;
     font-weight: inherit;
     text-transform: uppercase;
+    line-height: 120%;
 }
 
 span {

@@ -44,8 +44,18 @@ span {
     color: var(--white);
 }
 
+p {
+   font-size: 14px;
+   line-height: 150%; 
+   color: var(--blue-300);
+}
+
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 48px;
     }
+
+    p {
+        font-size: 18px;
+     }
 }

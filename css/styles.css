@@ -41,6 +41,9 @@ h1 {
     font-weight: inherit;
     text-transform: uppercase;
     line-height: 120%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 span {
@@ -51,6 +54,8 @@ p {
    font-size: 14px;
    line-height: 150%; 
    color: var(--blue-300);
+   text-align: center;
+   margin-bottom: 40px;
 }
 
 main {
@@ -59,6 +64,14 @@ main {
 
 .wrapper {
     padding: 36px;
+}
+
+.logo {
+    display: block;
+    margin-top: 146.5px;
+    margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -72,10 +85,13 @@ main {
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 48px;
+        margin-bottom: 24px;
+        text-align: left;
     }
 
     p {
         font-size: 18px;
+        text-align: left;
     }
 
     main {
@@ -87,11 +103,25 @@ main {
         max-width: 1120px;
         margin: auto;
     }
+
+    .logo {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 192px;
+        margin-left: initial;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (min-width: 1120px) {
     main {
         max-width: 736px;
+    }
+
+    .wrapper {
+        padding-top:    153px;
+        padding-bottom: 153px;
+
     }
 }
 

@@ -78,12 +78,18 @@ input {
     border-radius: 28px;
     border: none;
     background-color: var(--blue-900);
-    color: rgba(255, 255, 255, 0.50);
+    color: var(--white);
     font-size: 14PX;
     font-weight: 700;
     line-height: 200%;
     outline: none;
 }
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+
 
 button {
     padding: 8px 32px;
@@ -94,6 +100,10 @@ button {
     font-weight: 700;
     line-height: 200%;
     cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #54E6AF;
 }
 
 .wrapper {

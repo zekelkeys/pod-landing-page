@@ -112,7 +112,9 @@ button:hover {
 }
 
 .wrapper {
-    padding: 36px;
+    padding-top:   36px;
+    padding-left:  36px;
+    padding-right: 36px;
 }
 
 .logo {
@@ -202,9 +204,11 @@ button:hover {
     }
 
     .wrapper {
-        padding: 156px 44px;
-        max-width: 1120px;
         margin: auto;
+        padding-top:  156px;
+        padding-left:  44px;
+        padding-right: 44px;
+        max-width: 1120px;
     }
 
     .logo {
@@ -260,9 +264,8 @@ button:hover {
         max-width: 736px;
     }
 
-
     .wrapper {
-        padding-top:    80px;
+        padding-top: 153px;
     }
 
     .tablet-bg {
@@ -271,7 +274,7 @@ button:hover {
     
     .desktop-bg {
         position: absolute;
-        top: 153px;
+        top: 88px;
         right: 0;
         display: initial;
         z-index: -1;

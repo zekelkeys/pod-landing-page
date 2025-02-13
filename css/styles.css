@@ -33,6 +33,8 @@ html {
 body {
     font-weight: 300;
     font-family: Chivo, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -62,6 +64,8 @@ p {
 main {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 form {
@@ -92,6 +96,7 @@ input::placeholder {
 
 
 button {
+    position: relative;
     padding: 8px 32px;
     border-radius: 28px;
     border: none;
@@ -123,6 +128,7 @@ button:hover {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
     .podcast-logo:first-child {
         width:  55.94px;
@@ -142,8 +148,17 @@ button:hover {
     }
 
 
+.tablet-bg {
+    display: none;
+}
 
-@media only screen and (max-width: 768px) {
+.desktop-bg {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
     html { 
         background: no-repeat center center fixed; 
         background-image: linear-gradient(to bottom, rgba(18, 23, 37, 0.85), rgba(18, 23, 37, 0.85)), url('../assets/mobile/image-host.jpg');
@@ -166,6 +181,8 @@ button:hover {
 
     main {
         max-width: 592px;
+        margin: 0;
+        background-color: var(--blue-950);
     }
 
     form {
@@ -208,6 +225,7 @@ button:hover {
         margin-bottom: 0;
         height: 53px;
         align-items: self-end;
+        max-width: 547px;
     }
         .podcast-logo:first-child {
             width:  95.90px;
@@ -227,6 +245,14 @@ button:hover {
             height: 25.83px;
             margin-bottom: 1.58px;
         }
+
+    .tablet-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: initial;
+        z-index: -1;
+    }
 }
 
 @media only screen and (min-width: 1120px) {
@@ -234,10 +260,21 @@ button:hover {
         max-width: 736px;
     }
 
-    .wrapper {
-        padding-top:    153px;
-        padding-bottom: 153px;
 
+    .wrapper {
+        padding-top:    80px;
+    }
+
+    .tablet-bg {
+        display: none;
+    }
+    
+    .desktop-bg {
+        position: absolute;
+        top: 153px;
+        right: 0;
+        display: initial;
+        z-index: -1;
     }
 }
 

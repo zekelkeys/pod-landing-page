@@ -206,10 +206,10 @@ button:hover {
 
     .wrapper {
         margin: auto;
-        padding-top:  156px;
-        padding-left:  44px;
-        padding-right: 44px;
-        padding-bottom: 0;
+        padding-top:    156px;
+        padding-left:    44px;
+        padding-right:   44px;
+        padding-bottom: 156px;
         max-width: 1120px;
     }
 
@@ -266,17 +266,13 @@ button:hover {
         max-width: 736px;
     }
 
-    .wrapper {
-        padding-top: 153px;
-    }
-
     .tablet-bg {
         display: none;
     }
     
     .desktop-bg {
         position: absolute;
-        top: 88px;
+        top: 153px;
         right: 0;
         display: initial;
         z-index: -1;

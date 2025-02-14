@@ -162,18 +162,23 @@ button:hover {
         font-size: 48px;
         margin-bottom: 24px;
         text-align: left;
+        max-width: 528px;
     }
 
     p {
         font-size: 18px;
         text-align: left;
         max-width: 448px;
+        margin-top: 0;
     }
 
     main {
         max-width: 592px;
         margin: 0;
+        padding-top: 88px;
+      
         background-color: var(--blue-950);
+        background-color: red;
     }
 
     form {
@@ -204,7 +209,7 @@ button:hover {
     .logo {
         display: block;
         margin-top: 0;
-        margin-bottom: 192px;
+        margin-bottom: 104px;
         margin-left: initial;
         margin-right: auto;
     }
@@ -251,8 +256,13 @@ button:hover {
 }
 
 @media only screen and (min-width: 1120px) {
+
+    h1 {
+        max-width: 665px;
+    }
     main {
         max-width: 736px;
+        padding-top: 74.5px;
     }
 
     .tablet-bg {
@@ -261,7 +271,7 @@ button:hover {
     
     .desktop-bg {
         position: absolute;
-        top: 153px;
+        top: 156px;
         right: 0;
         display: initial;
         z-index: -1;

@@ -33,7 +33,6 @@ html {
 body {
     font-weight: 300;
     font-family: Chivo, sans-serif;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -46,7 +45,6 @@ h1 {
     text-transform: uppercase;
     line-height: 120%;
     text-align: center;
-    
 }
 
 span {
@@ -158,6 +156,9 @@ button:hover {
 }
 
 @media only screen and (min-width: 768px) {
+    body {
+        max-width: 975px;
+    }
     h1 {
         font-size: 48px;
         margin-bottom: 24px;
@@ -175,10 +176,8 @@ button:hover {
     main {
         max-width: 592px;
         margin: 0;
-        padding-top: 88px;
-      
+        padding-top: 88.7px;
         background-color: var(--blue-950);
-        background-color: red;
     }
 
     form {
@@ -256,13 +255,15 @@ button:hover {
 }
 
 @media only screen and (min-width: 1120px) {
-
+    body {
+        max-width: 1440px;
+    }
     h1 {
         max-width: 665px;
     }
     main {
         max-width: 736px;
-        padding-top: 74.5px;
+        padding-top: 88.3px;
     }
 
     .tablet-bg {

@@ -133,10 +133,18 @@ button:hover {
     order: 3;
     margin-bottom: 2.5rem;
 }
-
-.podcast-logo {
-    width: 100%;
-}
+    .podcast-logo:first-child {
+        width:  19%;
+    }
+    .podcast-logo:nth-child(2) {
+        width:  15%;
+    }
+    .podcast-logo:nth-child(3) {
+        width:  24%;
+    }
+    .podcast-logo:last-child {
+        width:  25%;
+    }
 
 .tablet-bg,
 .desktop-bg,
@@ -176,7 +184,7 @@ button:hover {
 
     main {
         margin: 0;
-        padding-top: 5.544rem;
+        padding-top: 5.6rem;
         max-width: 37rem;
         background-color: var(--blue-950);
     }
@@ -223,23 +231,11 @@ button:hover {
         max-width: 34.188rem;
         height: 3.313rem;
     }
-        .podcast-logo:first-child {
-            width:  6rem;
-            height: 1.813rem;
-        }
-        .podcast-logo:nth-child(2) {
-            width:  4.875rem;
-            height: 1.813rem;
-        }
         .podcast-logo:nth-child(3) {
             margin-bottom: 0.361rem;
-            width:  7.813rem;
-            height: 1.125rem;
         }
         .podcast-logo:last-child {
             margin-bottom: 0.099rem;
-            width:  8.063rem;
-            height: 1.625rem;
         }
 
     .tablet-bg,
@@ -271,7 +267,6 @@ button:hover {
 
     main {
         max-width: 46rem;
-        padding-top: 5.519rem;
     }
 
     .tablet-bg,

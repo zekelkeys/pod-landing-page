@@ -39,9 +39,9 @@ body {
 
 h1 {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     color: var(--green);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: inherit;
     text-transform: uppercase;
     line-height: 120%;
@@ -53,18 +53,18 @@ span {
 }
 
 p {
-    margin-bottom: 40px;
-    color: var(--blue-300);
-    font-size: 14px;
+    margin-bottom: 2.5rem;
+    font-size: 0.875rem;
     line-height: 150%; 
     text-align: center;
+    color: var(--blue-300);
 }
 
 main {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 25rem;
+    margin-inline: auto;
 }
 
 form {
@@ -74,17 +74,17 @@ form {
 }
 
 input {
-    margin-bottom: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 28px;
-    border-radius: 28px;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.75rem;
     border: none;
+    border-radius: 1.75rem;
     background-color: var(--blue-900);
-    color: var(--white);
-    font-size: 14PX;
-    font-weight: 700;
+    font-size: 0.875rem;
     line-height: 200%;
+    font-weight: 700;
+    color: var(--white);
     outline: none;
 }
 
@@ -96,13 +96,13 @@ input::placeholder {
 
 button {
     position: relative;
-    padding: 8px 32px;
-    border-radius: 28px;
+    padding: 0.5rem 2rem;
     border: none;
+    border-radius: 1.75rem;
     background-color: var(--green);
-    font-size: 14PX;
-    font-weight: 700;
+    font-size: 0.875rem;
     line-height: 200%;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -111,46 +111,39 @@ button:hover {
 }
 
 .wrapper {
-    padding-top:    36px;
-    padding-left:   36px;
-    padding-right:  36px;
-    padding-bottom: 146.5px;
+    padding-top:    2.25rem;
+    padding-left:   2.25rem;
+    padding-right:  2.25rem;
+    padding-bottom: 9.156rem;
 }
 
 .logo {
     display: block;
-    margin-top: 110.5px;
-    margin-bottom: 56px;
+    margin-top: 6.906rem;
+    margin-bottom: 3.5rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .podcast-logos {
-    order: 3;
-    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
+    order: 3;
+    margin-bottom: 2.5rem;
 }
 
 .podcast-logo {
     width: 100%;
 }
 
-.tablet-bg {
-    display: none;
-}
-
-.desktop-bg {
-    display: none;
-}
-
+.tablet-bg,
+.desktop-bg,
 .bg-dots-tablet,
 .bg-dots-desktop {
     display: none;
 }
-
 
 
 @media only screen and (max-width: 767px) {
@@ -161,159 +154,144 @@ button:hover {
     }
 }
 
+
 @media only screen and (min-width: 768px) {
     body {
-        max-width: 975px;
+        max-width: 60.938rem;
     }
+
     h1 {
-        font-size: 48px;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+        max-width: 33rem;
+        font-size: 3rem;
         text-align: left;
-        max-width: 528px;
     }
 
     p {
-        font-size: 18px;
-        text-align: left;
-        max-width: 448px;
         margin-top: 0;
+        max-width: 28rem;
+        font-size: 1.125rem;
+        text-align: left;
     }
 
     main {
-        max-width: 592px;
         margin: 0;
-        padding-top: 88.7px;
+        padding-top: 5.544rem;
+        max-width: 37rem;
         background-color: var(--blue-950);
     }
 
     form {
         flex-direction: row;
         justify-content: space-between;
-        background-color: var(--blue-900);
-        max-width: 448px;
-        padding: 4px 4px 4px 24px;
-        border-radius: 28px;
         order: 3;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
+        padding: 0.25rem 0.25rem 0.25rem 1.5rem;
+        max-width: 28rem;
+        border-radius: 1.75rem;
+        background-color: var(--blue-900);
     }
 
     input {
         margin-bottom: 0;
         padding: 0;
-        
         border-radius: 0;
     }
 
     .wrapper {
-        margin: auto;
-        padding-top:    156px;
-        padding-left:    44px;
-        padding-right:   44px;
-        padding-bottom: 156px;
-        max-width: 1120px;
+        margin-inline: auto;
+        padding-top:    9.75rem;
+        padding-left:   2.75rem;
+        padding-right:  2.75rem;
+        padding-bottom: 9.75rem;
+        max-width: 70rem;
     }
 
     .logo {
         display: block;
         margin-top: 0;
-        margin-bottom: 104px;
         margin-left: initial;
         margin-right: auto;
+        margin-bottom: 6.5rem;
     }
     
     .podcast-logos {
-        order: 4;
-        margin-bottom: 0;
-        height: 53px;
         align-items: self-end;
-        max-width: 547px;
-        gap: 40px;
+        order: 4;
+        gap: 2.5rem;
+        margin-bottom: 0;
+        max-width: 34.188rem;
+        height: 3.313rem;
     }
         .podcast-logo:first-child {
-            width: 96px;
-            height: 29px;
+            width:  6rem;
+            height: 1.813rem;
         }
         .podcast-logo:nth-child(2) {
-            width: 78px;
-            height: 29px;
+            width:  4.875rem;
+            height: 1.813rem;
         }
         .podcast-logo:nth-child(3) {
-            width: 125px;
-            height: 18px;
-            margin-bottom: 5.77px;
+            margin-bottom: 0.361rem;
+            width:  7.813rem;
+            height: 1.125rem;
         }
         .podcast-logo:last-child {
-            width: 129px;
-            height: 26px;
-            margin-bottom: 1.58px;
+            margin-bottom: 0.099rem;
+            width:  8.063rem;
+            height: 1.625rem;
         }
 
-    .tablet-bg {
+    .tablet-bg,
+    .bg-dots-tablet {
         position: absolute;
-        top: 0;
-        right: 0;
         display: initial;
+        right: 0;
+    }
+
+    .tablet-bg {
+        top: 0;
         z-index: -1;
     }
 
     .bg-dots-tablet {
-        position: absolute;
-        top: 816px;
-        right: 0;
-        display: initial;
+        top: 51rem;
     }
 }
+
 
 @media only screen and (min-width: 1120px) {
     body {
-        max-width: 1440px;
+        max-width: 90rem;
     }
+
     h1 {
-        max-width: 665px;
+        max-width: 41.563rem;
     }
+
     main {
-        max-width: 736px;
-        padding-top: 88.3px;
+        max-width: 46rem;
+        padding-top: 5.519rem;
     }
 
-    .tablet-bg {
-        display: none;
-    }
-    
-    .desktop-bg {
-        position: absolute;
-        top: 156px;
-        right: 0;
-        display: initial;
-        z-index: -1;
-    }
-
+    .tablet-bg,
     .bg-dots-tablet {
         display: none;
     }
 
+    .desktop-bg,
     .bg-dots-desktop {
         position: absolute;
-        top: 755px;
         right: 0;
         display: initial;
     }
+    
+    .desktop-bg {
+        top: 9.75rem;
+        z-index: -1;
+    }
+
+    .bg-dots-desktop {
+        top: 47.188rem;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

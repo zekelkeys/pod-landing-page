@@ -68,6 +68,7 @@ main {
 }
 
 form {
+    position: relative;
     display: flex;
     flex-direction: column;
     order: 4;
@@ -109,6 +110,15 @@ button {
 
 button:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #54E6AF;
+}
+
+strong {
+    order: 4;
+    margin-top: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--red);
+    text-align: center;
 }
 
 .wrapper {
@@ -194,7 +204,6 @@ button:hover {
         flex-direction: row;
         justify-content: space-between;
         order: 3;
-        margin-bottom: 2.5rem;
         padding: 0.125rem 0.25rem 0.125rem 1.5rem;
         max-width: 28rem;
         border-radius: 1.75rem;
@@ -207,6 +216,11 @@ button:hover {
         padding: 0;
         border-radius: 0;
         border: none;
+    }
+
+    strong {
+        text-align: left;
+        padding-left: 1.75rem;
     }
 
     .wrapper {
@@ -230,6 +244,7 @@ button:hover {
         align-items: self-end;
         order: 4;
         gap: 2.5rem;
+        margin-top: 2.5rem;
         margin-bottom: 0;
         max-width: 34.188rem;
         height: 3.313rem;
